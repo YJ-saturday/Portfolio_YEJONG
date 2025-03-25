@@ -1,0 +1,6 @@
+max-width
+1650px  
+1300px  
+1024px  
+800px  
+500px  

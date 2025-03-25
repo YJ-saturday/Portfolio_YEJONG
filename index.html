@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강의진행용</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- plugin -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugin/jquery.simplyscroll.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+        <a href="index.html" class="logo en">
+          <span class="en">YJ.</span>
+          Portfolio
+        </a>
+        <nav class="gnb en">
+          <ul>
+            <li><a href="#indexhtml" data-splitting>HOME</a></li>
+            <li><a href="#aboutPage" data-splitting>ABOUT</a></li>
+            <li><a href="#portFolioPage" data-splitting>PORTFOLIO</a></li>
+            <li><a href="#contantPage" data-splitting>CONTANT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="visual en animate" data-animate="motion">
+        <div class="mainText">
+          <p><span>Hello</span></p>
+          <p class="en2"><span>Welcome to</span></p>
+          <p><span>My Portfolio</span></p>
+        </div>
+        <div class="ppunsig">
+          <img
+            id="changingImage"
+            src="./images/ppunsig1.png"
+            alt="계속 바뀌는 이미지"
+          />
+        </div>
+        <div class="scroll">Scroll Down</div>
+      </section>
+
+      <!-- section01 -->
+      <section class="con01">
+        <div class="videoWrap">
+          <video autoplay="" muted="" loop="" playinline="">
+            <source src="images/AdobeStock_1012306833.mov" type="video/mp4" />
+          </video>
+          <div class="title" en>
+            <h2>
+              <span>Web Publisher<br /></span>
+              <span class="en2">KimYejong</span>
+              for Portfolio
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- section02 -->
+      <section class="con02 animate" data-animate="motion">
+        <div class="titleAbout en">
+          <p class="a">About</p>
+          <p class="b en2">Me</p>
+        </div>
+
+        <div id="aboutPage" class="about en3">
+          <img class="imgProfile" src="images/kimyejong.png" />
+          <div class="aboutBox">
+            <div class="aboutTxt">
+              <h3 class="signature">
+                <span class="en2">Yejong Kim</span>
+              </h3>
+              <p>안녕하세요! 신입 퍼블리셔 김예종입니다.</p>
+              <p>
+                HTML, CSS, JavaScript, Figma 등 다양한 툴을 활용하여<br />
+                웹사이트의 레이아웃과 디자인을 구성하고,<br />
+                모든 사용자가 웹사이트를 쉽게 이용할 수 있도록 합니다.
+              </p>
+              <p>
+                이를 활용하여 반응형 웹을 제작할 수 있으며, <br />
+                디자이너 및 개발자와 협업하며 원활한 소통과 <br />
+                완성도 높은 결과물을 만드는 데 집중할 수 있습니다.
+              </p>
+              <p>
+                맡은 일에 애정을 갖고 책임감 있게 수행합니다.<br />
+                주어진 역할에서 가치를 창출하며, 제 역량을 충분히 발휘하고자
+                합니다.
+              </p>
+              <a
+                href="https://reinvented-tray-d4d.notion.site/14094518ff5680f493d4cb72a14b6d4f"
+                class="aboutMore"
+                target="_blank"
+              >
+                자기소개 더보기
+              </a>
+            </div>
+            <div class="education">
+              <h3>EDUCATION</h3>
+              <ul>
+                <li>CloneCoding_2025 성서대학교 신학과 졸업</li>
+                <li>2024.05~10 국민은행 IT아카데미 IT's Your Life</li>
+              </ul>
+            </div>
+            <div class="awards">
+              <h3>AWARDS</h3>
+              <ul>
+                <li>2024.11 IT's Your Life 프로젝트 최우수상</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="Skill">
+          <div class="textWrap">
+            <div class="title en">
+              <p>My <span class="en2">Skill</span></p>
+            </div>
+            <ul>
+              <li><p>Photoshop</p></li>
+              <li class="en2"><p>Figma</p></li>
+              <li><p>html/CSS</p></li>
+              <li class="en2"><p>JavaScript</p></li>
+              <li><p>JQuery</p></li>
+              <li class="en2"><p>vue</p></li>
+              <li class="en2"><p>React</p></li>
+            </ul>
+          </div>
+          <ul class="list">
+            <li><img src="images/about/about_img_01.svg" alt="" /></li>
+            <li><img src="images/about/about_img_02.svg" alt="" /></li>
+            <li><img src="images/about/about_img_03.svg" alt="" /></li>
+            <li><img src="images/about/about_img_04.svg" alt="" /></li>
+            <li><img src="images/about/about_img_05.svg" alt="" /></li>
+            <li><img src="images/about/about_img_06.svg" alt="" /></li>
+            <li><img src="images/about/about_img_07.svg" alt="" /></li>
+            <li><img src="images/about/about_img_08.svg" alt="" /></li>
+            <li><img src="images/about/about_img_09.svg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- section03 -->
+      <section class="con03" data-animate="motion">
+        <div class="titlePort en">
+          <p class="a">About</p>
+          <p class="b en2">PortFolio</p>
+        </div>
+        <ul id="portFolioPage" class="workList en3">
+          <li>
+            <a
+              href="https://yj-saturday.github.io/Clonecoding_DaebangIndustry/"
+              target="_blank"
+            >
+              <div class="imgBox">
+                <img src="./images/skill/cc_대방산업.png" alt="" />
+              </div>
+              <div class="textBox">
+                <h3>대방산업</h3>
+                <div class="info">
+                  <p>UI/UX Designm web Publinsing</p>
+                  <p>CloneCoding_2025</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://yj-saturday.github.io/Clonecoding_Dobda/"
+              target="_blank"
+            >
+              <div class="imgBox">
+                <img src="./images/skill/cc_돕다.png" alt="" />
+              </div>
+              <div class="textBox">
+                <h3>돕다</h3>
+                <div class="info">
+                  <p>UI/UX Designm web Publinsing</p>
+                  <p>CloneCoding_2025</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://yj-saturday.github.io/Clonecoding_Musign/"
+              target="_blank"
+            >
+              <div class="imgBox">
+                <img src="./images/skill/cc_뮤자인.png" alt="" />
+              </div>
+              <div class="textBox">
+                <h3>뮤자인</h3>
+                <div class="info">
+                  <p>UI/UX Designm web Publinsing</p>
+                  <p>CloneCoding_2025</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://yj-saturday.github.io/Clonecoding_Ystudio/"
+              target="_blank"
+            >
+              <div class="imgBox">
+                <img src="./images/skill/cc_와이스튜디오.png" alt="" />
+              </div>
+              <div class="textBox">
+                <h3>Y스튜디오</h3>
+                <div class="info">
+                  <p>UI/UX Designm web Publinsing</p>
+                  <p>CloneCoding_2025</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://yj-saturday.github.io/Clonecoding_Koreaconsumeragency/"
+              target="_blank"
+            >
+              <div class="imgBox">
+                <img src="./images/skill/cc_한국소비자원시대.png" alt="" />
+              </div>
+              <div class="textBox">
+                <h3>한국소비자원시대</h3>
+                <div class="info">
+                  <p>UI/UX Designm web Publinsing</p>
+                  <p>CloneCoding_2025</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://yj-saturday.github.io/Clonecoding_Hanwhachemical/"
+              target="_blank"
+            >
+              <div class="imgBox">
+                <img src="./images/skill/cc_한화캐미컬.png" alt="" />
+              </div>
+              <div class="textBox">
+                <h3>한화캐미컬</h3>
+                <div class="info">
+                  <p>UI/UX Designm web Publinsing</p>
+                  <p>CloneCoding_2025</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="project">
+          <div class="inner">
+            <h1>PROJECT</h1>
+            <ul>
+              <li>
+                <a href="">
+                  <img
+                    src="./images/skill/cc_대방산업.png"
+                    alt=""
+                    class="fadeImg"
+                  />
+                  <p class="title en1">CrossFIT</p>
+                  <p class="color en2">Click</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./images/skill/cc_대방산업.png"
+                    alt=""
+                    class="fadeImg"
+                  />
+                  <p class="title en3">별밤뮤직</p>
+                  <p class="color en2">Click</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./images/skill/cc_대방산업.png"
+                    alt=""
+                    class="fadeImg"
+                  />
+                  <p class="title en3">명절카드</p>
+                  <p class="color en2">Click</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer id="contantPage" class="contactVenter en3">
+        <div class="footerInner">
+          <div class="contactTxt1">
+            <p>함께 일할 웹 퍼블리셔를 찾고 계신가요?</p>
+          </div>
+          <div class="contact">
+            <p class="word">yejanot@naver.com</p>
+          </div>
+          <div class="contactTxt2">
+            <p class="mb20">저에게 궁금한 점이 있으시다면 연락해 주세요.</p>
+            <a href="mailto:yejanot@naver.com" class="shortcutArrow">
+              ☞&nbsp;&nbsp;<span class="sendMe">메일보내기</span>
+            </a>
+          </div>
+          <div class="copyright">
+            <p class="copyrightTxt">© 2025 kimyejong</p>
+            <ul class="linkBox">
+              <li>
+                <a
+                  href="https://reinvented-tray-d4d.notion.site/14094518ff5680f493d4cb72a14b6d4f"
+                  target="_blank"
+                  >RESUME</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/YJ-saturday" target="_blank"
+                  >GITHUB</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,641 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 영어폰트 */
+.en {
+  font-family: 'Public Sans', serif;
+}
+.en2 {
+  font-family: 'Cormorant Infant', serif;
+}
+.en3 {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-family: 'Public Sans', serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  padding: 30px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+header.active {
+  transform: translateY(-100%);
+}
+header .menuOpen {
+  display: none;
+  transition: 0.3s;
+}
+header .logo {
+  color: #fff;
+}
+.gnb ul {
+  display: flex;
+  justify-content: space-between;
+}
+.gnb ul li {
+  margin-left: 70px;
+}
+.gnb ul li a {
+  display: block;
+}
+.gnb ul li a .char {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  overflow: hidden;
+}
+.gnb ul li a .char::before,
+.gnb ul li a .char::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  color: #fff;
+  content: attr(data-char);
+  transition: transform 0.35s;
+  transition-delay: calc(30ms * var(--char-index));
+}
+.gnb ul li a .char::before {
+  transform: translateY(100%);
+  color: #fff;
+}
+.gnb ul li a:hover .char::before {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.gnb ul li a:hover .char::after {
+  transform: translateY(100%);
+}
+/* visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+  padding-top: 125px;
+  position: relative;
+  letter-spacing: -1px;
+}
+.visual .mainText {
+  font-size: 170px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0px 0px 150px 60px;
+  /* background: red; */
+  display: inline-block;
+  letter-spacing: 12px;
+}
+.visual .mainText p {
+  overflow: hidden;
+}
+.visual .scroll {
+  position: fixed;
+  left: 60px;
+  bottom: 40px;
+}
+.visual .ppunsig {
+  position: absolute;
+  right: -20px;
+  top: 20%;
+}
+/* visual animation */
+.visual.motion .mainText {
+  transform: translate3d(0, 0, 0) skewY(0deg);
+  overflow: hidden;
+}
+.visual.motion .mainText p span {
+  display: block;
+  animation-name: textAni;
+  animation-duration: 1.8s;
+}
+.visual.motion .mainText p:nth-child(2) span {
+  animation-duration: 1.7s;
+}
+.visual.motion .mainText p:nth-child(3) span {
+  display: block;
+  animation-name: textAni;
+  animation-duration: 1.5s;
+}
+@keyframes textAni {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: translate3d(0, -90px, 0) skewY(-10deg);
+    transform-origin: top left;
+  }
+}
+@keyframes textani2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+/* section.con01 */
+.con01 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.con01 .videoWrap video {
+  width: 100vw;
+  height: 134.8vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.con01 .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.con01 .title h2 {
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+/* section.con02 */
+.con02 .titleAbout {
+  width: 100%;
+  height: 100vh;
+  font-size: 170px;
+  line-height: 0.9;
+  text-align: center;
+  padding-top: 30vh;
+  box-sizing: border-box;
+}
+.con02 .titleAbout .en2 {
+  font-size: 220px;
+}
+/* About */
+.con02 .about {
+  max-width: 1415px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  justify-content: center;
+  gap: 15%;
+  border: 1px solid #fff;
+  margin: 24px;
+  height: 800px;
+}
+.con02 .about .imgProfile {
+  width: 30%;
+  height: 650px;
+  object-fit: cover;
+}
+.con02 .about .aboutBox .aboutTxt {
+  flex-grow: 1;
+}
+.con02 .about .aboutBox .aboutTxt .signature {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.con02 .about .aboutBox .aboutTxt p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.con02 .about .aboutBox .aboutTxt .aboutMore {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.con02 .about .aboutBox .aboutTxt .aboutMore i {
+  margin-left: 5px;
+}
+.con02 .about .aboutBox .aboutTxt .aboutMore:hover {
+  background: #fff;
+  color: #000;
+}
+.con02 .about .aboutBox .education,
+.con02 .about .aboutBox .awards {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.con02 .about .aboutBox .education h3,
+.con02 .about .aboutBox .awards h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.con02 .about .aboutBox .education ul,
+.con02 .about .aboutBox .awards ul {
+  list-style: none;
+  padding: 0;
+}
+.con02 .about .aboutBox .education li,
+.con02 .about .aboutBox .awards li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* section.con02 */
+.con02 .Skill {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-top: 70px, 0, 30px 0;
+}
+.con02 .Skill .textWrap {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.con02 .Skill .textWrap .title {
+  font-size: 18px;
+}
+.con02 .Skill .textWrap ul li {
+  font-size: 100px;
+  line-height: 1.2;
+}
+.con02 .Skill .textWrap ul li .en2 {
+  padding-left: 5px;
+}
+/* simplyScroll */
+.simply-scroll .simply-scroll-clip {
+  overflow: hidden;
+  transform: rotate(5deg) translate(150%, 400px) scale(1.1);
+  opacity: 0;
+}
+.simply-scroll .simply-scroll-clip .simply-scroll-list li {
+  float: left;
+  width: 400px;
+  filter: brightness(50%);
+}
+.simply-scroll .simply-scroll-clip .simply-scroll-list li img {
+  width: 40%;
+  opacity: 0.5;
+}
+/* simplyScroll.motion */
+.con02.motion .simply-scroll .simply-scroll-clip {
+  transform: rotate(5deg) translate(0%, 400px) scale(1.1);
+  opacity: 1;
+  transition: 1.2s;
+  transition-delay: 0.3s;
+}
+.con02.motion .textwrap ul li p {
+  animation-name: textAni;
+  animation-duration: 1.3s;
+}
+
+/* con03 */
+.con03 {
+  height: 270vh;
+}
+.con03 .titlePort {
+  width: 100%;
+  height: 50vh;
+  font-size: 170px;
+  line-height: 0.9;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10%;
+}
+.con03 .titlePort .en2 {
+  font-size: 235px;
+}
+.con03 .workList {
+  width: 70%;
+  /* background: red; */
+  margin: 100vh auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.con03 .workList li {
+  width: 45%;
+  margin-top: 200px;
+  /* border: 1px solid red; */
+}
+.con03 .workList li:nth-child(2n) {
+  margin-top: 0;
+}
+.con03 .workList li a {
+  display: block;
+}
+.con03 .workList li a .imgBox {
+  height: 300px;
+  overflow: hidden;
+  border: 0.5px solid #888;
+  padding: 6px;
+}
+.con03 .workList li a .imgBox img {
+  width: 57vh;
+}
+.con03 .workList li a .textBox h3 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 20px 0 5px;
+}
+.con03 .workList li a .textBox {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  /* border: 0.5px solid #888; */
+  padding: 10px;
+}
+.con03 .workList li a .textBox .info {
+  margin: 25px 0 5px;
+}
+.con03 .workList li a .textBox .info .imfoP {
+  padding-left: 10px;
+}
+
+/* con03. workList hover */
+.con03 .workList li a {
+  position: relative;
+}
+.con03 .workList li a .imgBox::before {
+  content: '';
+  width: 168px;
+  height: 168px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background: url(../images/readMore2.png) no-repeat center/35px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 1;
+  transition: all;
+  opacity: 0;
+}
+.con03 .workList li a .imgBox:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  background: #fff url(../images/readMore3.png) no-repeat center/160px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+  z-index: 1;
+  -webkit-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* hover */
+.con03 .workList li a:hover .imgBox::before {
+  opacity: 1;
+  z-index: 2;
+}
+.con03 .workList li a:hover .imgBox::after {
+  width: 168px;
+  height: 168px;
+}
+.con03 .workList li a:hover .imgBox img {
+  filter: brightness(50%);
+}
+/*  */
+.con03 .project {
+  width: 100%;
+  /* background: #ee0d0d; */
+  color: #fff;
+  text-align: center;
+  /* 패딩을 rem 단위로 변경해 반응형 대응 */
+  padding: 4rem 0;
+}
+.con03 .project .inner {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  box-sizing: border-box;
+  background: #000;
+}
+.con03 .project .inner h1 {
+  font-size: 40px;
+  margin: 25px;
+}
+.con03 .project .inner ul {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  border: 2px solid #fff;
+  min-height: 50vh;
+  padding: 5rem;
+  box-sizing: border-box;
+  border-radius: 80px;
+  background: #000;
+}
+.con03 .project .inner ul li {
+  /* flex를 통해 li가 동일한 비율로 너비를 가질 수 있도록 함 */
+  flex: 1;
+}
+.con03 .project .inner ul li a {
+  /* 세로/가로 가운데 정렬을 위해 flex 속성 사용 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* 링크 밑줄 제거 */
+  text-decoration: none;
+  /* 부모 요소의 색상 사용 */
+  color: inherit;
+}
+.con03 .project .inner ul li a .title {
+  font-size: 3.5rem;
+}
+.con03 .project .inner ul li a .color {
+  /* px 대신 rem 단위를 사용 */
+  font-size: 3.5rem;
+  transition: all 0.5s ease-in-out;
+}
+/* hover */
+.con03 .project .inner ul li a:hover .color {
+  font-size: 105px;
+  transition: all 0.3s ease-in-out;
+  color: #f3931b;
+}
+.con03 .project .inner ul li a .fadeImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(30%);
+  opacity: 0;
+  overflow: hidden;
+}
+
+/*footer*/
+.contactVenter {
+  width: 100%;
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* 기본 텍스트 색상 */
+  box-sizing: border-box;
+}
+/* 내부 컨테이너 */
+.footerInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  position: relative;
+}
+
+/* 메인 문구 */
+.contactTxt1 p {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* 이메일 강조 */
+.contact .word {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+/* 서브 텍스트 */
+.contactTxt2 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 메일 보내기 버튼 */
+.shortcutArrow {
+  position: relative;
+  transition: 0.4s all ease-in-out;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.shortcutArrow i {
+  position: absolute;
+  top: 50%;
+  right: -3rem;
+  transform: translate(0, -50%);
+}
+
+.shortcutArrow:hover {
+  padding-left: 10px;
+}
+.sendMe:hover {
+  color: #fcfea6;
+}
+
+/* 하단 저작권 및 링크 */
+.copyright {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+}
+
+.copyright .linkBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.copyright .linkBox a {
+  display: block;
+  text-decoration: none;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.copyright .linkBox a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* 애니메이션 적용 */
+.letter {
+  display: inline-block;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 500ms ease-in;
+  font-size: 8rem;
+  font-size: clamp(2rem, 8vw, 8rem);
+  font-weight: bold;
+}
+
+.letter.on {
+  transform: none;
+  opacity: 1;
+}
