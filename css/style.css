@@ -14,7 +14,7 @@
 }
 body {
   font-family: 'Public Sans', serif;
-  font-size: 16px; /* 16px */
+  font-size: 16px;
   line-height: 1.6;
 }
 .wrap {
@@ -36,7 +36,7 @@ header {
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  padding: 30px 60px; /* 30px 60px */
+  padding: 30px 60px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ header .menuOpen {
   justify-content: space-between;
 }
 .gnb ul li {
-  margin-left: 70px; /* 70px */
+  margin-left: 70px;
 }
 .gnb ul li a {
   display: block;
@@ -96,17 +96,17 @@ header .menuOpen {
 .visual {
   width: 100%;
   height: 100vh;
-  padding-top: 125px; /* 125px */
+  padding-top: 125px;
   position: relative;
-  letter-spacing: -1px; /* -1px */
+  letter-spacing: -1px;
 }
 .visual .mainText {
-  font-size: 170px; /* 170px */
+  font-size: 170px;
   font-weight: 400;
   line-height: 1;
-  margin: 0 0 0 40px; /* 0 0 150px 60px */
+  margin: 0 0 0 40px;
   display: inline-block;
-  letter-spacing: 12px; /* 12px */
+  letter-spacing: 12px;
   z-index: 3;
 }
 .visual .mainText p {
@@ -115,12 +115,12 @@ header .menuOpen {
 }
 .visual .scroll {
   position: fixed;
-  left: 60px; /* 60px */
-  bottom: 40px; /* 40px */
+  left: 60px;
+  bottom: 40px;
 }
 .visual .ppunsig {
   position: absolute;
-  right: -20px; /* -20px */
+  right: -20px;
   top: 23%;
 }
 .visual .ppunsig #changingImage {
@@ -151,7 +151,7 @@ header .menuOpen {
   }
   30% {
     opacity: 0;
-    transform: translate3d(0, -90px, 0) skewY(-10deg); /* -90px */
+    transform: translate3d(0, -90px, 0) skewY(-10deg);
     transform-origin: top left;
   }
 }
@@ -188,9 +188,9 @@ header .menuOpen {
   color: #fff;
 }
 .con01 .title h2 {
-  font-size: 100px; /* 100px */
+  font-size: 100px;
   font-weight: 400;
-  letter-spacing: -1px; /* -1px */
+  letter-spacing: -1px;
   line-height: 1.2;
 }
 
@@ -198,27 +198,27 @@ header .menuOpen {
 .con02 .titleAbout {
   width: 100%;
   height: 100vh;
-  font-size: 170px; /* 170px */
+  font-size: 170px;
   line-height: 0.9;
   text-align: center;
-  padding-top: 300px; /* 300px approximated to give vertical centering */
+  padding-top: 300px;
   box-sizing: border-box;
 }
 .con02 .titleAbout .en2 {
-  font-size: 220px; /* 220px approximated */
+  font-size: 220px;
 }
 /* About */
 .con02 .about {
-  max-width: 1415px; /* 1415px */
+  max-width: 1415px;
   display: flex;
   align-items: center;
   color: #fff;
   background-color: #000;
   justify-content: center;
   gap: 15%;
-  border: 1px solid #fff; /* 1px */
-  margin: 24px; /* 24px */
-  height: 800px; /* 800px */
+  border: 1px solid #fff;
+  margin: 24px;
+  height: 800px;
 }
 .con02 .about .imgProfile {
   width: 30%;
@@ -229,28 +229,28 @@ header .menuOpen {
   flex-grow: 1;
 }
 .con02 .about .aboutBox .aboutTxt .signature {
-  font-size: 32px; /* 32px */
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 15px; /* 15px */
+  margin-bottom: 15px;
 }
 .con02 .about .aboutBox .aboutTxt p {
-  font-size: 16px; /* 16px */
+  font-size: 16px;
   line-height: 1.8;
-  margin-bottom: 15px; /* 15px */
+  margin-bottom: 15px;
 }
 .con02 .about .aboutBox .aboutTxt .aboutMore {
   display: inline-flex;
   align-items: center;
-  font-size: 16px; /* 16px */
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
-  border: 2px solid #fff; /* 2px */
-  padding: 10px 15px; /* 10px 15px */
-  border-radius: 30px; /* 30px */
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
 }
 .con02 .about .aboutBox .aboutTxt .aboutMore i {
-  margin-left: 5px; /* 5px */
+  margin-left: 5px;
 }
 .con02 .about .aboutBox .aboutTxt .aboutMore:hover {
   background: #fff;
@@ -259,15 +259,15 @@ header .menuOpen {
 .con02 .about .aboutBox .education,
 .con02 .about .aboutBox .awards {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px; /* 20px */
-  border-radius: 10px; /* 10px */
-  margin-top: 20px; /* 20px */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 .con02 .about .aboutBox .education h3,
 .con02 .about .aboutBox .awards h3 {
-  font-size: 22px; /* 22px */
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 10px; /* 10px */
+  margin-bottom: 10px;
 }
 .con02 .about .aboutBox .education ul,
 .con02 .about .aboutBox .awards ul {
@@ -276,14 +276,14 @@ header .menuOpen {
 }
 .con02 .about .aboutBox .education li,
 .con02 .about .aboutBox .awards li {
-  font-size: 16px; /* 16px */
+  font-size: 16px;
   line-height: 1.6;
 }
 .con02 .Skill {
   width: 100%;
   height: 100vh;
   position: relative;
-  margin: 70px 0 30px 0; /* 70px 0 30px 0 */
+  margin: 70px 0 30px 0;
 }
 .con02 .Skill .textWrap {
   width: 70%;
@@ -294,14 +294,14 @@ header .menuOpen {
   z-index: 2;
 }
 .con02 .Skill .textWrap .title {
-  font-size: 18px; /* 18px */
+  font-size: 18px;
 }
 .con02 .Skill .textWrap ul li {
-  font-size: 100px; /* 100px */
+  font-size: 100px;
   line-height: 1.2;
 }
 .con02 .Skill .textWrap ul li .en2 {
-  padding-left: 5px; /* 5px */
+  padding-left: 5px;
 }
 /* simplyScroll */
 .simply-scroll .simply-scroll-clip {
@@ -311,7 +311,7 @@ header .menuOpen {
 }
 .simply-scroll .simply-scroll-clip .simply-scroll-list li {
   float: left;
-  width: 400px; /* 400px */
+  width: 400px;
   filter: brightness(50%);
 }
 .simply-scroll .simply-scroll-clip .simply-scroll-list li img {
@@ -337,14 +337,14 @@ header .menuOpen {
 .con03 .titlePort {
   width: 100%;
   height: 50vh;
-  font-size: 170px; /* 170px */
+  font-size: 170px;
   line-height: 0.9;
   text-align: center;
   box-sizing: border-box;
   margin-top: 10%;
 }
 .con03 .titlePort .en2 {
-  font-size: 235px; /* 235px */
+  font-size: 235px;
 }
 .con03 .workList {
   width: 70%;
@@ -355,7 +355,7 @@ header .menuOpen {
 }
 .con03 .workList li {
   width: 40%;
-  margin-top: 200px; /* 200px */
+  margin-top: 200px;
 }
 .con03 .workList li:nth-child(2n) {
   margin-top: 0;
@@ -364,42 +364,42 @@ header .menuOpen {
   display: block;
 }
 .con03 .workList li a .imgBox {
-  height: 300px; /* 300px */
+  height: 300px;
   overflow: hidden;
-  border: 0.5px solid #888; /* 0.5px */
-  padding: 6px; /* 6px */
+  border: 0.5px solid #888;
+  padding: 6px;
 }
 .con03 .workList li a .imgBox img {
   width: 100%;
 }
 .con03 .workList li a .textBox h3 {
-  font-size: 35px; /* 35px */
+  font-size: 35px;
   font-weight: normal;
-  margin: 20px 0 5px; /* 20px 0 5px */
+  margin: 20px 0 5px;
   color: #fff;
 }
 .con03 .workList li a .textBox {
   display: flex;
   justify-content: space-between;
   color: #888;
-  padding: 10px; /* 10px */
+  padding: 10px;
 }
 .con03 .workList li a .textBox .info {
-  margin: 25px 0 5px; /* 25px 0 5px */
+  margin: 25px 0 5px;
 }
 .con03 .workList li a .textBox .info .imfoP {
-  padding-left: 10px; /* 10px */
+  padding-left: 10px;
 }
 .con03 .workList li a {
   position: relative;
 }
 .con03 .workList li a .imgBox::before {
   content: '';
-  width: 168px; /* 168px */
-  height: 168px; /* 168px */
+  width: 168px;
+  height: 168px;
   border-radius: 50%;
-  border: 1px solid #fff; /* 1px */
-  background: url(../images/readMore2.png) no-repeat center/35px; /* 35px */
+  border: 1px solid #fff;
+  background: url(../images/readMore2.png) no-repeat center/35px;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -413,7 +413,7 @@ header .menuOpen {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: #fff url(../images/readMore3.png) no-repeat center/160px; /* 160px */
+  background: #fff url(../images/readMore3.png) no-repeat center/160px;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -449,7 +449,7 @@ header .menuOpen {
   width: 100%;
   color: #fff;
   text-align: center;
-  padding: 64px 0; /* 64px 0 */
+  padding: 64px 0;
 }
 .con03 .project .inner {
   max-width: 70%;
@@ -459,18 +459,18 @@ header .menuOpen {
   background: #000;
 }
 .con03 .project .inner h1 {
-  font-size: 40px; /* 40px */
-  margin: 25px; /* 25px */
+  font-size: 40px;
+  margin: 25px;
 }
 .con03 .project .inner ul {
   display: flex;
-  gap: 32px; /* 32px */
+  gap: 32px;
   position: relative;
-  border: 2px solid #fff; /* 2px */
+  border: 2px solid #fff;
   min-height: 50vh;
-  padding: 80px; /* 80px */
+  padding: 80px;
   box-sizing: border-box;
-  border-radius: 80px; /* 80px */
+  border-radius: 80px;
   background: #000;
 }
 .con03 .project .inner ul li {
@@ -487,14 +487,14 @@ header .menuOpen {
   color: inherit;
 }
 .con03 .project .inner ul li a .title {
-  font-size: 56px; /* 56px */
+  font-size: 56px;
 }
 .con03 .project .inner ul li a .color {
-  font-size: 56px; /* 56px */
+  font-size: 56px;
   transition: all 0.5s ease-in-out;
 }
 .con03 .project .inner ul li a:hover .color {
-  font-size: 105px; /* 105px */
+  font-size: 105px;
   transition: all 0.3s ease-in-out;
   color: #f3931b;
 }
@@ -502,8 +502,8 @@ header .menuOpen {
   position: fixed;
   top: 0;
   left: 0;
-  width: 350px; /* 350px */
-  height: 220px; /* 220px */
+  width: 350px;
+  height: 220px;
   object-fit: cover;
   filter: brightness(30%);
   opacity: 0;
@@ -525,28 +525,28 @@ header .menuOpen {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  gap: 20px; /* 20px */
+  gap: 20px;
   position: relative;
 }
 .contactTxt1 p {
-  font-size: 40px; /* 40px */
+  font-size: 40px;
   font-weight: 700;
 }
 .contact .word {
-  font-size: 80px; /* 80px */
+  font-size: 80px;
   font-weight: 700;
 }
 .contactTxt2 p {
-  font-size: 20px; /* 20px */
+  font-size: 20px;
   font-weight: 400;
   color: #888;
   line-height: 1.6;
-  margin-bottom: 20px; /* 20px */
+  margin-bottom: 20px;
 }
 .shortcutArrow {
   position: relative;
   transition: 0.4s all ease-in-out;
-  font-size: 20px; /* 20px */
+  font-size: 20px;
   font-weight: 700;
   text-decoration: none;
   margin-top: 20px;
@@ -554,18 +554,18 @@ header .menuOpen {
 .shortcutArrow i {
   position: absolute;
   top: 50%;
-  right: -48px; /* -48px */
+  right: -48px;
   transform: translate(0, -50%);
 }
 .shortcutArrow:hover {
-  padding-left: 10px; /* 10px */
+  padding-left: 10px;
 }
 .sendMe:hover {
   color: #fcfea6;
 }
 .copyright {
   position: absolute;
-  bottom: 64px; /* 64px */
+  bottom: 64px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -575,7 +575,7 @@ header .menuOpen {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px; /* 20px */
+  gap: 20px;
 }
 .copyright .linkBox a {
   display: block;
@@ -747,11 +747,11 @@ header .menuOpen {
   }
   .con03 .workList li {
     width: 80%;
-    margin-top: 32px; /* 2rem = 32px */
+    margin-top: 32px;
   }
   .con03 .project .inner ul {
     flex-direction: column;
-    padding: 32px; /* 2rem = 32px */
+    padding: 32px;
   }
   .con02 .about {
     max-width: 80%;
