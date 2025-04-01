@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
 
+  // $(document).on('click', 'a[href="#"]', function (e) { e.preventDefault(); })
+
   // Splitting 호출 함수
   function initSplitting() {
     Splitting();
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollTrigger: {
         trigger: '.textWrap',
         start: '0% 100%',
-        end: '0% 50%',
+        end: '0% 90%',
         scrub: 1,
         // markers: true
       }
@@ -206,8 +208,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-$(document).ready(function () {
-  $('.menuOpen').on('click', function () {
-    $('.gnb').slideToggle();
-  });
-});

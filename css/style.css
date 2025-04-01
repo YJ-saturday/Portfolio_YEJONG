@@ -14,7 +14,7 @@
 }
 body {
   font-family: 'Public Sans', serif;
-  font-size: 16px;
+  font-size: 16px; /* 16px */
   line-height: 1.6;
 }
 .wrap {
@@ -36,7 +36,7 @@ header {
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  padding: 30px 60px;
+  padding: 30px 60px; /* 30px 60px */
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -48,16 +48,17 @@ header.active {
 header .logo {
   color: #fff;
 }
-.hamburger {
+header .menuOpen {
   display: none;
+  transition: 0.3;
 }
-
+/* gnb */
 .gnb ul {
   display: flex;
   justify-content: space-between;
 }
 .gnb ul li {
-  margin-left: 70px;
+  margin-left: 70px; /* 70px */
 }
 .gnb ul li a {
   display: block;
@@ -90,35 +91,37 @@ header .logo {
 .gnb ul li a:hover .char::after {
   transform: translateY(100%);
 }
+
 /* visual */
 .visual {
   width: 100%;
   height: 100vh;
-  padding-top: 125px;
+  padding-top: 125px; /* 125px */
   position: relative;
-  letter-spacing: -1px;
+  letter-spacing: -1px; /* -1px */
 }
 .visual .mainText {
-  font-size: 170px;
+  font-size: 170px; /* 170px */
   font-weight: 400;
   line-height: 1;
-  margin: 0px 0px 150px 60px;
+  margin: 0 0 0 40px; /* 0 0 150px 60px */
   display: inline-block;
-  letter-spacing: 12px;
+  letter-spacing: 12px; /* 12px */
   z-index: 3;
 }
 .visual .mainText p {
   overflow: hidden;
+  font-size: inherit;
 }
 .visual .scroll {
   position: fixed;
-  left: 60px;
-  bottom: 40px;
+  left: 60px; /* 60px */
+  bottom: 40px; /* 40px */
 }
 .visual .ppunsig {
   position: absolute;
-  right: -20px;
-  top: 20%;
+  right: -20px; /* -20px */
+  top: 23%;
 }
 .visual .ppunsig #changingImage {
   width: 100%;
@@ -148,7 +151,7 @@ header .logo {
   }
   30% {
     opacity: 0;
-    transform: translate3d(0, -90px, 0) skewY(-10deg);
+    transform: translate3d(0, -90px, 0) skewY(-10deg); /* -90px */
     transform-origin: top left;
   }
 }
@@ -185,9 +188,9 @@ header .logo {
   color: #fff;
 }
 .con01 .title h2 {
-  font-size: 100px;
+  font-size: 100px; /* 100px */
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: -1px; /* -1px */
   line-height: 1.2;
 }
 
@@ -195,27 +198,27 @@ header .logo {
 .con02 .titleAbout {
   width: 100%;
   height: 100vh;
-  font-size: 170px;
+  font-size: 170px; /* 170px */
   line-height: 0.9;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 300px; /* 300px approximated to give vertical centering */
   box-sizing: border-box;
 }
 .con02 .titleAbout .en2 {
-  font-size: 220px;
+  font-size: 220px; /* 220px approximated */
 }
 /* About */
 .con02 .about {
-  max-width: 1415px;
+  max-width: 1415px; /* 1415px */
   display: flex;
   align-items: center;
   color: #fff;
   background-color: #000;
   justify-content: center;
   gap: 15%;
-  border: 1px solid #fff;
-  margin: 24px;
-  height: 800px;
+  border: 1px solid #fff; /* 1px */
+  margin: 24px; /* 24px */
+  height: 800px; /* 800px */
 }
 .con02 .about .imgProfile {
   width: 30%;
@@ -226,28 +229,28 @@ header .logo {
   flex-grow: 1;
 }
 .con02 .about .aboutBox .aboutTxt .signature {
-  font-size: 32px;
+  font-size: 32px; /* 32px */
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* 15px */
 }
 .con02 .about .aboutBox .aboutTxt p {
-  font-size: 16px;
+  font-size: 16px; /* 16px */
   line-height: 1.8;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* 15px */
 }
 .con02 .about .aboutBox .aboutTxt .aboutMore {
   display: inline-flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 16px; /* 16px */
   color: #fff;
   text-decoration: none;
-  border: 2px solid #fff;
-  padding: 10px 15px;
-  border-radius: 30px;
+  border: 2px solid #fff; /* 2px */
+  padding: 10px 15px; /* 10px 15px */
+  border-radius: 30px; /* 30px */
   transition: all 0.3s ease-in-out;
 }
 .con02 .about .aboutBox .aboutTxt .aboutMore i {
-  margin-left: 5px;
+  margin-left: 5px; /* 5px */
 }
 .con02 .about .aboutBox .aboutTxt .aboutMore:hover {
   background: #fff;
@@ -256,15 +259,15 @@ header .logo {
 .con02 .about .aboutBox .education,
 .con02 .about .aboutBox .awards {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
+  padding: 20px; /* 20px */
+  border-radius: 10px; /* 10px */
+  margin-top: 20px; /* 20px */
 }
 .con02 .about .aboutBox .education h3,
 .con02 .about .aboutBox .awards h3 {
-  font-size: 22px;
+  font-size: 22px; /* 22px */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* 10px */
 }
 .con02 .about .aboutBox .education ul,
 .con02 .about .aboutBox .awards ul {
@@ -273,14 +276,14 @@ header .logo {
 }
 .con02 .about .aboutBox .education li,
 .con02 .about .aboutBox .awards li {
-  font-size: 16px;
+  font-size: 16px; /* 16px */
   line-height: 1.6;
 }
 .con02 .Skill {
   width: 100%;
   height: 100vh;
   position: relative;
-  margin-top: 70px, 0, 30px 0;
+  margin: 70px 0 30px 0; /* 70px 0 30px 0 */
 }
 .con02 .Skill .textWrap {
   width: 70%;
@@ -291,14 +294,14 @@ header .logo {
   z-index: 2;
 }
 .con02 .Skill .textWrap .title {
-  font-size: 18px;
+  font-size: 18px; /* 18px */
 }
 .con02 .Skill .textWrap ul li {
-  font-size: 100px;
+  font-size: 100px; /* 100px */
   line-height: 1.2;
 }
 .con02 .Skill .textWrap ul li .en2 {
-  padding-left: 5px;
+  padding-left: 5px; /* 5px */
 }
 /* simplyScroll */
 .simply-scroll .simply-scroll-clip {
@@ -308,7 +311,7 @@ header .logo {
 }
 .simply-scroll .simply-scroll-clip .simply-scroll-list li {
   float: left;
-  width: 400px;
+  width: 400px; /* 400px */
   filter: brightness(50%);
 }
 .simply-scroll .simply-scroll-clip .simply-scroll-list li img {
@@ -334,14 +337,14 @@ header .logo {
 .con03 .titlePort {
   width: 100%;
   height: 50vh;
-  font-size: 170px;
+  font-size: 170px; /* 170px */
   line-height: 0.9;
   text-align: center;
   box-sizing: border-box;
   margin-top: 10%;
 }
 .con03 .titlePort .en2 {
-  font-size: 235px;
+  font-size: 235px; /* 235px */
 }
 .con03 .workList {
   width: 70%;
@@ -352,7 +355,7 @@ header .logo {
 }
 .con03 .workList li {
   width: 40%;
-  margin-top: 200px;
+  margin-top: 200px; /* 200px */
 }
 .con03 .workList li:nth-child(2n) {
   margin-top: 0;
@@ -361,78 +364,66 @@ header .logo {
   display: block;
 }
 .con03 .workList li a .imgBox {
-  height: 300px;
+  height: 300px; /* 300px */
   overflow: hidden;
-  border: 0.5px solid #888;
-  padding: 6px;
+  border: 0.5px solid #888; /* 0.5px */
+  padding: 6px; /* 6px */
 }
 .con03 .workList li a .imgBox img {
   width: 100%;
 }
 .con03 .workList li a .textBox h3 {
-  font-size: 35px;
+  font-size: 35px; /* 35px */
   font-weight: normal;
-  margin: 20px 0 5px;
+  margin: 20px 0 5px; /* 20px 0 5px */
+  color: #fff;
 }
 .con03 .workList li a .textBox {
   display: flex;
   justify-content: space-between;
   color: #888;
-  /* border: 0.5px solid #888; */
-  padding: 10px;
+  padding: 10px; /* 10px */
 }
 .con03 .workList li a .textBox .info {
-  margin: 25px 0 5px;
+  margin: 25px 0 5px; /* 25px 0 5px */
 }
 .con03 .workList li a .textBox .info .imfoP {
-  padding-left: 10px;
+  padding-left: 10px; /* 10px */
 }
 .con03 .workList li a {
   position: relative;
 }
 .con03 .workList li a .imgBox::before {
   content: '';
-  width: 168px;
-  height: 168px;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  background: url(../images/readMore2.png) no-repeat center/35px;
+  width: 168px; /* 168px */
+  height: 168px; /* 168px */
+  border-radius: 50%;
+  border: 1px solid #fff; /* 1px */
+  background: url(../images/readMore2.png) no-repeat center/35px; /* 35px */
   position: absolute;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%) rotate(45deg);
   z-index: 1;
-  transition: all;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
 }
 .con03 .workList li a .imgBox:after {
   content: '';
-  width: 0px;
-  height: 0px;
-  border-radius: 100%;
-  background: #fff url(../images/readMore3.png) no-repeat center/160px;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #fff url(../images/readMore3.png) no-repeat center/160px; /* 160px */
   position: absolute;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
   transition: 0.4s;
   z-index: 1;
-  -webkit-animation-name: spin;
   animation-name: spin;
-  -webkit-animation-duration: 10s;
   animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-}
-@-webkit-keyframes spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 @keyframes spin {
   0% {
@@ -456,63 +447,54 @@ header .logo {
 /* project */
 .con03 .project {
   width: 100%;
-  /* background: #ee0d0d; */
   color: #fff;
   text-align: center;
-  /* 패딩을 rem 단위로 변경해 반응형 대응 */
-  padding: 4rem 0;
+  padding: 64px 0; /* 64px 0 */
 }
 .con03 .project .inner {
   max-width: 70%;
   width: 100%;
   margin: 0 auto;
-  /* padding: 2rem; */
   box-sizing: border-box;
   background: #000;
 }
 .con03 .project .inner h1 {
-  font-size: 40px;
-  margin: 25px;
+  font-size: 40px; /* 40px */
+  margin: 25px; /* 25px */
 }
 .con03 .project .inner ul {
   display: flex;
-  gap: 2rem;
+  gap: 32px; /* 32px */
   position: relative;
-  border: 2px solid #fff;
+  border: 2px solid #fff; /* 2px */
   min-height: 50vh;
-  padding: 5rem;
+  padding: 80px; /* 80px */
   box-sizing: border-box;
-  border-radius: 80px;
+  border-radius: 80px; /* 80px */
   background: #000;
 }
 .con03 .project .inner ul li {
-  /* flex를 통해 li가 동일한 비율로 너비를 가질 수 있도록 함 */
   flex: 1;
 }
 .con03 .project .inner ul li a {
-  /* 세로/가로 가운데 정렬을 위해 flex 속성 사용 */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  /* 링크 밑줄 제거 */
   text-decoration: none;
-  /* 부모 요소의 색상 사용 */
   color: inherit;
 }
 .con03 .project .inner ul li a .title {
-  font-size: 3.5rem;
+  font-size: 56px; /* 56px */
 }
 .con03 .project .inner ul li a .color {
-  /* px 대신 rem 단위를 사용 */
-  font-size: 3.5rem;
+  font-size: 56px; /* 56px */
   transition: all 0.5s ease-in-out;
 }
-/* hover */
 .con03 .project .inner ul li a:hover .color {
-  font-size: 105px;
+  font-size: 105px; /* 105px */
   transition: all 0.3s ease-in-out;
   color: #f3931b;
 }
@@ -520,8 +502,8 @@ header .logo {
   position: fixed;
   top: 0;
   left: 0;
-  width: 350px;
-  height: 220px;
+  width: 350px; /* 350px */
+  height: 220px; /* 220px */
   object-fit: cover;
   filter: brightness(30%);
   opacity: 0;
@@ -529,94 +511,78 @@ header .logo {
 }
 
 /*footer*/
-.contactVenter {
+.contactCenter {
   width: 100%;
-  height: 100vh; /* 화면 전체 높이 */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff; /* 기본 텍스트 색상 */
+  color: #fff;
   box-sizing: border-box;
 }
-/* 내부 컨테이너 */
 .footerInner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  gap: 20px;
+  gap: 20px; /* 20px */
   position: relative;
 }
-
-/* 메인 문구 */
 .contactTxt1 p {
-  font-size: 40px;
+  font-size: 40px; /* 40px */
   font-weight: 700;
 }
-
-/* 이메일 강조 */
 .contact .word {
-  font-size: 80px;
+  font-size: 80px; /* 80px */
   font-weight: 700;
 }
-
-/* 서브 텍스트 */
 .contactTxt2 p {
-  font-size: 20px;
+  font-size: 20px; /* 20px */
   font-weight: 400;
   color: #888;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* 20px */
 }
-
-/* 메일 보내기 버튼 */
 .shortcutArrow {
   position: relative;
   transition: 0.4s all ease-in-out;
-  font-size: 20px;
+  font-size: 20px; /* 20px */
   font-weight: 700;
   text-decoration: none;
   margin-top: 20px;
 }
-
 .shortcutArrow i {
   position: absolute;
   top: 50%;
-  right: -3rem;
+  right: -48px; /* -48px */
   transform: translate(0, -50%);
 }
-
 .shortcutArrow:hover {
-  padding-left: 10px;
+  padding-left: 10px; /* 10px */
 }
 .sendMe:hover {
   color: #fcfea6;
 }
-
-/* 하단 저작권 및 링크 */
 .copyright {
   position: absolute;
-  bottom: 4rem;
+  bottom: 64px; /* 64px */
   width: 100%;
   display: flex;
   justify-content: space-between;
   color: #888;
 }
-
 .copyright .linkBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 20px; /* 20px */
 }
-
 .copyright .linkBox a {
   display: block;
   text-decoration: none;
   color: #888;
   transition: color 0.3s ease;
 }
-
 .copyright .linkBox a:hover {
   color: #fff;
   text-decoration: underline;
@@ -626,74 +592,262 @@ header .logo {
   transform: none;
   opacity: 1;
 }
-/* 1800px */
-@media screen and (max-width: 1800px) {
-  .visual .ppunsig {
-    top: 19%;
-    right: -4%;
-  }
-  .visual .ppunsig #changingImage {
-    width: 90%;
-  }
-  .visual.motion .mainText p {
-    font-size: 150px;
-  }
-}
-/* 1650px ~ 1301px */
+
+/*pc 1650px~1301px */
 @media screen and (max-width: 1650px) {
+  .visual .ppunsig #changingImage {
+    width: 80%;
+  }
   .visual .ppunsig {
+    right: -145px;
     top: 14%;
-    right: -16%;
   }
-  .visual .ppunsig #changingImage {
-    width: 70%;
+  .con02 .titleAbout {
+    padding-top: 266px;
   }
-  .visual.motion .mainText p {
-    font-size: 100px;
+  .con02 .about {
+    max-width: 80%;
   }
-}
-
-/* 1300px ~ 1025px */
-@media screen and (max-width: 1300px) {
-  .visual .ppunsig {
-    top: 13%;
-    right: -28%;
-  }
-  .visual .ppunsig #changingImage {
-    width: 55%;
-  }
-  .visual.motion .mainText p {
-    font-size: 75px;
-  }
-}
-
-/* 1024px~800px (태블릿 및 작은 데스크탑) */
-@media screen and (max-width: 1024px) {
-  .visual .ppunsig {
-    top: 14%;
-    right: -60%;
-  }
-  .visual .ppunsig #changingImage {
+  .con02 .about .imgProfile {
     width: 35%;
   }
-  .visual.motion .mainText p {
-    font-size: 55px;
+  .con02 .Skill {
+    margin: 0;
+  }
+  .con02 .Skill .textWrap ul li {
+    font-size: 80px;
+  }
+  .con03 .titlePort .en2 {
+    font-size: 220px;
+  }
+  .con03 .workList li a .textBox {
+    display: block;
+    justify-content: space-between;
+    color: #888;
+    padding: 10px;
+  }
+  .con03 .workList li a .textBox .info {
+    margin: 0px;
+  }
+  .con03 .workList li a .textBox h3 {
+    font-size: 30px;
+    margin: 20px 0 0px;
+  }
+  .con03 .project .inner ul {
+    min-height: 45vh;
+    padding: 50px;
+  }
+  .con03 .project .inner ul li a:hover .color {
+    font-size: 90px;
   }
 }
-
-/* 768px~481px 이하 (태블릿, 큰 모바일) */
-@media screen and (max-width: 768px) {
-  .visual .ppunsig {
-    top: 16%;
-    right: -105%;
+/* 1300px~1025px */
+@media screen and (max-width: 1300px) {
+  .visual .mainText {
+    font-size: 11vw;
   }
   .visual .ppunsig #changingImage {
-    width: 20%;
+    width: 60%;
   }
-  .visual.motion .mainText p {
-    font-size: 40px;
+  .visual .ppunsig {
+    right: -265px;
+    top: 13%;
+  }
+  .con01 .title h2 {
+    font-size: 90px;
+  }
+  .con02 .titleAbout,
+  .con03 .titlePort {
+    font-size: 150px;
+  }
+  .con02 .titleAbout .en2,
+  .con03 .titlePort .en2 {
+    font-size: 200px;
+  }
+  .con02 .about {
+    max-width: 1000px;
+    gap: 8%;
+  }
+  .con02 .about .imgProfile {
+    height: 85%;
+    width: 41%;
+  }
+  .con02 .about .aboutBox .aboutTxt p,
+  .con02 .about .aboutBox .aboutTxt .aboutMore,
+  .con02 .about .aboutBox .education h3,
+  .con02 .about .aboutBox .awards h3,
+  .con02 .about .aboutBox .education li,
+  .con02 .about .aboutBox .awards ul,
+  .con02 .about .aboutBox .education li,
+  .con02 .about .aboutBox .awards li {
+    font-size: 14px;
+  }
+  .con03 .project .inner ul li a .title {
+    font-size: 50px;
+  }
+  .con03 .project .inner ul li a:hover .color {
+    font-size: 80px;
+  }
+  .con03 .project .inner ul {
+    padding: 40px;
   }
 }
-/* 480px 이하 (모바일) */
-@media screen and (max-width: 480px) {
+/* 800px~501px */
+@media (max-width: 800px) {
+  header {
+    padding: 30px 30px;
+    font-size: 14px;
+  }
+  .visual .ppunsig #changingImage {
+    width: 30%;
+  }
+  .visual .ppunsig {
+    right: -474px;
+    top: 9%;
+  }
+  .gnb ul li {
+    margin-left: 20px;
+  }
+  .visual .mainText {
+    margin: 0 0 0 23px;
+  }
+  .con01 .title h2 {
+    font-size: 50px;
+  }
+  .con02 .titleAbout {
+    padding-top: 264px;
+  }
+  .con02 .titleAbout,
+  .con03 .titlePort {
+    font-size: 100px;
+  }
+  .con02 .titleAbout .en2,
+  .con03 .titlePort .en2 {
+    font-size: 150px;
+  }
+  .con02 .about {
+    flex-direction: column;
+    height: auto;
+    padding: 32px; /* 2rem = 32px */
+  }
+  .con02 .about .imgProfile {
+    width: 50%;
+    margin-bottom: 24px; /* 1.5rem = 24px */
+  }
+
+  .con02 .Skill {
+    margin: 32px 0;
+  }
+
+  .con03 .workList {
+    width: 90%;
+    margin: 80vh auto 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .con03 .workList li {
+    width: 80%;
+    margin-top: 32px; /* 2rem = 32px */
+  }
+  .con03 .project .inner ul {
+    flex-direction: column;
+    padding: 32px; /* 2rem = 32px */
+  }
+  .con02 .about {
+    max-width: 80%;
+  }
+  .con02 .about .aboutBox .aboutTxt p,
+  .con02 .about .aboutBox .aboutTxt .aboutMore,
+  .con02 .about .aboutBox .education h3,
+  .con02 .about .aboutBox .awards h3,
+  .con02 .about .aboutBox .education li,
+  .con02 .about .aboutBox .awards ul,
+  .con02 .about .aboutBox .education li,
+  .con02 .about .aboutBox .awards li {
+    font-size: 12px;
+  }
+  .con02 .Skill .textWrap ul li {
+    font-size: 70px;
+  }
+  .simply-scroll .simply-scroll-clip .simply-scroll-list li img {
+    width: 30%;
+  }
+  .con03 .workList li a .textBox {
+    margin-bottom: 40px;
+    padding: 0px;
+  }
+  .con03 .workList li a .textBox .info {
+    gap: 155px;
+    font-size: 12px;
+  }
+  .con03 .workList li a .imgBox {
+    height: 240px;
+  }
+  .con03 .project .inner h1 {
+    font-size: 30px;
+  }
+  .con03 {
+    height: 370vh;
+  }
+  .con03 .workList {
+    margin: 50vh auto 0;
+  }
+  .con03 .project .inner ul li a .title {
+    font-size: 40px;
+  }
+  .con03 .project .inner ul li a .color {
+    font-size: 40px;
+  }
+  .con03 .project .inner ul li a:hover .color {
+    font-size: 60px;
+  }
+  .con03 .project .inner ul li a .fadeImg {
+    width: 250px;
+    height: 150px;
+  }
+  .contactTxt1 p {
+    font-size: 20px;
+  }
+  .contact .word {
+    font-size: 40px;
+  }
+  .contactTxt2 p {
+    font-size: 15px;
+  }
+  .shortcutArrow {
+    font-size: 15px;
+  }
+}
+/* 500px~401px */
+@media screen and (max-width: 500px) {
+  header {
+    font-size: 12px;
+  }
+  .visual .mainText {
+    font-size: 9.5vw;
+  }
+  .visual .ppunsig {
+    right: -500px;
+    top: 8%;
+  }
+  .visual .ppunsig #changingImage {
+    width: 25%;
+  }
+  .con01 .title h2 {
+    font-size: 40px;
+  }
+  .con02 .titleAbout,
+  .con03 .titlePort {
+    font-size: 80px;
+  }
+  .con02 .titleAbout .en2,
+  .con03 .titlePort .en2 {
+    font-size: 120px;
+  }
+  .con02 .Skill {
+    margin: 0px;
+  }
+  .con02 .Skill .textWrap ul li {
+    font-size: 60px;
+  }
 }
