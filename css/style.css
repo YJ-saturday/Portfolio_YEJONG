@@ -121,7 +121,7 @@ header .menuOpen {
 .visual .ppunsig {
   position: absolute;
   right: -20px;
-  top: 23%;
+  top: 20%;
 }
 .visual .ppunsig #changingImage {
   width: 100%;
@@ -366,7 +366,7 @@ header .menuOpen {
 .con03 .workList li a .imgBox {
   height: 300px;
   overflow: hidden;
-  border: 0.5px solid #888;
+  /* border: 0.5px solid #888; */
   padding: 6px;
 }
 .con03 .workList li a .imgBox img {
@@ -452,8 +452,7 @@ header .menuOpen {
   padding: 64px 0;
 }
 .con03 .project .inner {
-  max-width: 70%;
-  width: 100%;
+  max-width: 127vh;
   margin: 0 auto;
   box-sizing: border-box;
   background: #000;
@@ -494,7 +493,7 @@ header .menuOpen {
   transition: all 0.5s ease-in-out;
 }
 .con03 .project .inner ul li a:hover .color {
-  font-size: 105px;
+  font-size: 80px;
   transition: all 0.3s ease-in-out;
   color: #f3931b;
 }
@@ -524,7 +523,7 @@ header .menuOpen {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   gap: 20px;
   position: relative;
 }
@@ -633,12 +632,12 @@ header .menuOpen {
     font-size: 30px;
     margin: 20px 0 0px;
   }
-  .con03 .project .inner ul {
-    min-height: 45vh;
-    padding: 50px;
+  .con03 .project .inner ul li a .title,
+  .con03 .project .inner ul li a .color {
+    font-size: 40px;
   }
   .con03 .project .inner ul li a:hover .color {
-    font-size: 90px;
+    font-size: 60px;
   }
 }
 /* 1300px~1025px */
@@ -681,15 +680,6 @@ header .menuOpen {
   .con02 .about .aboutBox .education li,
   .con02 .about .aboutBox .awards li {
     font-size: 14px;
-  }
-  .con03 .project .inner ul li a .title {
-    font-size: 50px;
-  }
-  .con03 .project .inner ul li a:hover .color {
-    font-size: 80px;
-  }
-  .con03 .project .inner ul {
-    padding: 40px;
   }
 }
 /* 800px~501px */
@@ -746,12 +736,13 @@ header .menuOpen {
     align-items: center;
   }
   .con03 .workList li {
-    width: 80%;
+    width: 65%;
     margin-top: 32px;
   }
   .con03 .project .inner ul {
     flex-direction: column;
     padding: 32px;
+    border: none;
   }
   .con02 .about {
     max-width: 80%;
@@ -780,6 +771,7 @@ header .menuOpen {
     gap: 155px;
     font-size: 12px;
   }
+
   .con03 .workList li a .imgBox {
     height: 240px;
   }
